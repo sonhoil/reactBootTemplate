@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FirstScreen from './Screens/FirstScreen'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+          {/* 실제 화면에 보여지는 태그, 클릭 시 주소창이 /FirstScreen으로 이동 */}
+          <Link to="/FirstScreen">FirstScreen</Link>
+          {/* 주소창 변함에 따라 화면을 해당 주소창에 맞게 변경해준다. */}
+          <Routes>
+            <Route path="/FirstScreen"  element={<FirstScreen />}></Route>
+          </Routes>
+    </Router>
   );
 }
+
 
 export default App;
