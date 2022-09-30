@@ -17,6 +17,8 @@ function Header() {
         <Link to="/FirstScreen">FirstScreen</Link>
         <br></br>
         <Link to="/HeaderHideScreen">HeaderHideScreen</Link>
+        <br></br>
+        <Link to="/TextData">TextData</Link>
       </div>
       
     );
