@@ -2,6 +2,7 @@ import React from 'react';
 import FirstScreen from './Screens/FirstScreen'
 import HeaderHideScreen from './Screens/HeaderHideScreen'
 import TextData from './Screens/TextData'
+import FileData from './Screens/FileData'
 import Header from './Screens/Header'
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ function App() {
             <Route path="/FirstScreen"  element={<FirstScreen />}></Route>
             <Route path="/HeaderHideScreen"  element={<HeaderHideScreen />}></Route>
             <Route path="/TextData"  element={<TextData />}></Route>
+            <Route path="/FileData"  element={<FileData />}></Route>
           </Routes>
           </div>
     </Router>
